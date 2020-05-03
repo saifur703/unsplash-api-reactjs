@@ -1,0 +1,172 @@
+body {
+    color: #333;
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.mainmenu li {
+    display: inline-block;
+}
+
+.mainmenu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo a {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search-form input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.footer {
+    background: #f7f7f7;
+    padding: 20px 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+}
+
+.footer-menu li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+p.copyright {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+input[type=submit] {
+    background-color: #333;
+    border-color: #333;
+    padding: 5px 12px;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.single-photo-item {
+    margin-bottom: 15px;
+}
+
+.single-photo-wrap {
+    background-color: #ddd;
+    height: 300px;
+}
+
+.single-photo-item img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.latest-photos-area {
+    padding: 50px 0;
+}
+
+
+.single-photo-meta h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.single-photo-meta {
+    padding: 15px;
+}
+
+.single-photo-meta a,
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 30px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.btn:hover {
+    color: #fff;
+    padding: 15px 40px;
+}
+
+.single-photo-wrap a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    line-height: 20px;
+    margin-top: -10px;
+    width: 120px;
+    margin-left: -60px;
+    background: #f7f7f7;
+    padding: 16px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .9s;
+}
+
+.single-photo-wrap::before {
+    position: absolute;
+    content: "";
+    left: 15px;
+    top: 0;
+    width: calc(100% - 30px);
+    height: 300px;
+    background: #000;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+}
+
+.single-photo-wrap:hover::before {
+    opacity: .5;
+}
+
+.single-photo-wrap:hover a {
+    opacity: 1;
+    visibility: visible;
+}
